@@ -1,7 +1,8 @@
 <?php 
 
 
-if (strstr(("HTTP_HOST"), "51.178.86.117")){
+if( strstr($_SERVER['HTTP_HOST'], '51.178.86.117') ){
+
     
     $name = "salah";
     $username = "salah";
@@ -19,5 +20,6 @@ try
 }
 catch(Exception $e)
 {
-    die('Erreur : '.$e->getMessage());
+    echo 'Erreur : '.$e->getMessage();
+    //die('Erreur : '.$e->getMessage());
 }

@@ -18,7 +18,7 @@ include_once( 'header.php')
 
 <?php
 $errorMessage  = '';
-if( isset( $_GET['pseudo'] ) ) {
+if( isset( $_GET['invalidpseudo'] ) ) {
     $errorMessage = 'Désolé ! ce pseudo est déjà utilisé.';
 }
 if( isset( $_GET['invalidpass'] ) ) {
